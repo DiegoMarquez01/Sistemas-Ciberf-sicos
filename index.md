@@ -1,5 +1,5 @@
 ---
-title: siberfisicos
+title: Ciberfisicos
 layout: home
 ---
 
