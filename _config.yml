@@ -3,3 +3,4 @@ description: Documentación del curso de Sistemas Ciberfísicos
 theme: just-the-docs
 url: https://diegomarquez01.github.io
 baseurl: /Sistemas-Ciberf-sicos
+mathjax: mathjax3
