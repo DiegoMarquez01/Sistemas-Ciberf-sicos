@@ -212,18 +212,11 @@ Una forma práctica de elegir la fuente es sumar el consumo máximo aproximado d
 | **Consumo pico estimado** | **≈ 130 W** | **≈ 895 W** |
 | Con margen de 25 % | ≈ 165 W | ≈ 1 120 W |
 | **Fuente elegida** | **500 W 80+ Bronce** | **1000 W 80+ Platinum** |
-| Evaluación | Sobrada: trabaja a ≈ 26 % de su capacidad. Una de 400–450 W sería suficiente, aunque la de 500 W deja espacio para agregar una tarjeta de video en el futuro. | Justa: a plena carga trabaja a ≈ 90 %. NVIDIA recomienda 1000 W como mínimo para la RTX 5090; por sus picos transitorios de consumo, una de **1200 W ATX 3.1** sería más adecuada. |
+| Evaluación | Sobrada: trabaja a ≈ 26 % de su capacidad. Una de 400–450 W sería suficiente, aunque la de 500 W deja espacio para agregar una tarjeta de video en el futuro. | Justa, a plena carga trabaja a ≈ 90 %. NVIDIA recomienda 1000 W como mínimo para la RTX 5090; por sus picos transitorios de consumo. |
 
 *Tabla 10. Estimación de consumo y dimensionamiento de la fuente de poder. Valores aproximados con base en las especificaciones de los fabricantes.*
 
-El mismo cálculo sirve para validar la protección eléctrica. En el caso A, el regulador de 1400 VA cubre de sobra el consumo del equipo. En el caso B, el no-break de 1500 W queda cerca del límite si se suma el monitor a un consumo pico de ≈900 W, aunque en uso normal está bien. Algo a considerar: un regulador solo estabiliza el voltaje, mientras que un no-break además da respaldo de batería ante apagones.
-
-### 5.3 Otras observaciones
-
-- **Proveedores y marcas.** En el caso A, la RAM (Zunate) y el SSD (Cusu, comprado en AliExpress) son de marcas poco conocidas. Ahorran dinero, pero conviene revisar la garantía, el tiempo de envío y las reseñas, porque un SSD que falla se lleva consigo los datos del cliente.
-- **Equilibrio del equipo.** En el caso B, una RTX 5090 está pensada para jugar en 4K a alta frecuencia de refresco. Un monitor curvo de 32" de $3,389 y periféricos de gama de entrada no la aprovechan. Con presupuesto ilimitado, habría sido coherente un monitor 4K de 144 Hz o más.
-- **Precio sospechosamente bajo.** Una fuente de 1000 W 80+ Platinum por $2,139 está muy por debajo de su precio habitual. En componentes críticos como la fuente, un precio así debe verificarse (modelo exacto, vendedor, garantía) antes de comprar.
-- **El colchón del caso A está bien aprovechado.** Sobran ≈$8,100 que podrían usarse para mejoras puntuales según el uso real del cliente: 2 × 8 GB de RAM a 3200 MHz, un SSD de marca reconocida o un monitor de mayor tamaño.
+El mismo cálculo sirve para validar la protección eléctrica. En el caso A, el regulador de 1400 VA cubre de sobra el consumo del equipo. En el caso B, el no-break de 1500 W queda cerca del límite si se suma el monitor a un consumo pico de ≈900 W, aunque en uso normal está bien. Algo a considerar, un regulador solo estabiliza el voltaje, mientras que un no-break además da respaldo de batería ante apagones.
 
 ---
 
@@ -240,5 +233,3 @@ El mismo cálculo sirve para validar la protección eléctrica. En el caso A, el
 5. **El precio más bajo no siempre es el más barato.** Marcas poco conocidas o vendedores sin garantía pueden ahorrar dinero al inicio pero costar más si una pieza falla. En componentes críticos (fuente, almacenamiento, tarjeta madre) conviene priorizar la confiabilidad.
 
 6. **Un buen presupuesto es un documento verificable.** Revisar el ejercicio permitió encontrar un error de suma ($7,636 en lugar de $9,815) y uno de compatibilidad (Z890). Es una buena razón para revisar siempre las cuentas y las especificaciones antes de entregar una cotización, y de preferencia hacer los cálculos en una hoja de cálculo y no a mano.
-
-7. **Relación con los sistemas ciberfísicos.** Estos mismos criterios aplican a los proyectos del curso. En la Práctica 4, por ejemplo, la elección de la Raspberry Pi Pico en lugar de un Arduino evitó usar convertidores de nivel, porque ambas placas trabajan a 3.3 V. Y una resistencia pull-up de unos cuantos centavos fue la diferencia entre que el bus 1-Wire funcionara o no. Seleccionar componentes compatibles, dimensionar su alimentación y considerar su costo total son decisiones de diseño tan importantes como el código.
